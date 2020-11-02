@@ -1,5 +1,6 @@
 import React from 'react';
 import Auxx from '../../hoc/Auxx'
+import classes from './Layout.module.css'
 
 const Layout = ( props ) => {
     return(
@@ -7,7 +8,7 @@ const Layout = ( props ) => {
             <div>
                 Toolbar, SideDrawer, Backdrop
             </div>
-            <main>
+            <main className={classes.Content}>
                 {props.children}
             </main>
         </Auxx>

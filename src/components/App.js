@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import BurgerMaker from '../containers/BurgerMaker/BurgerMaker';
 import Layout from './Layout/Layout';
 
 class App extends Component {
@@ -6,7 +7,9 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Layout ></Layout>
+        <Layout >
+          <BurgerMaker />
+        </Layout>
       </div>
     )
 }
